@@ -1,8 +1,8 @@
 PImage img;
-int startX=0;
-int startY=150;
-int endX=0;
-int endY=150;
+int startX=185;
+int startY=260;
+int endX=185;
+int endY=260;
 
 void setup()
 {
@@ -11,12 +11,14 @@ void setup()
   background(255,253,202);
   strokeWeight(10);
   img = loadImage("voldie2.png");
+  image(img,-10,270,250,200);
 
 }
 void draw()
 {
  background(255,253,202);
  image(img,-10,270,250,200);
+ 
  
  int r = ( (int)(Math.random()*40) + 100 );
  int b = ( (int)(Math.random()*40) + 100 );
@@ -41,9 +43,9 @@ void draw()
 
 void mousePressed()
 {
-startX=0;
-startY=150;
-endX=0;
-endY=150;
+startX=185;
+startY=260;
+endX=185;
+endY=260;
 }
   
